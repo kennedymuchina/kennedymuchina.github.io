@@ -130,13 +130,15 @@ body {
 
 .navbar-brand {
     color: #c4c3c5 !important;
-    margin-top: 70px !important;
+    margin-top: 60px !important;
     padding-bottom: 0 !important;
     left: 50px !important;
+     font-size: 2em !important;
 }
 
 .nav-brand a {
     padding-bottom: 0 !important;
+   
 }
 
 
@@ -144,7 +146,7 @@ body {
     width: 36px;
     height: 36px;
     position: absolute;
-    margin-top: 50px !important;
+    margin-top: 45px !important;
     right: 50px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -241,7 +243,7 @@ body {
     display: block;
     width: 100%;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(37, 37, 37, 0.1);
+    background-color: rgba(15, 15, 15, 0.0);
     overflow-y: hidden;
     transition: 2s;
 }
