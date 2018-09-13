@@ -1,9 +1,6 @@
 $(document).ready(function () {
-  $('.nav-icon4').click(function () {
+  $(".nav-icon4").on("click", function (event) {
     $(this).toggleClass('open');
+    $('.myNav').toggleClass('overlay');
   });
 });
-
-function myFunction() {
-  document.getElementByClassName(".overlay").style.visibility = "collapse";
-}

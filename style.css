@@ -9,7 +9,7 @@ body {
     background-color: #131116;
 }
 
-.circles {
+ .circles {
     position: absolute;
     top: 0;
     left: 0;
@@ -232,13 +232,18 @@ body {
 
 /* ----------------------------- */
 /* Hidden Menu Reveal */
+.myNav {
+    display: none;
+}
+
 .overlay {
     height:81%;
+    display: block;
     width: 100%;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: rgba(37, 37, 37, 0.1);
     overflow-y: hidden;
-    transition: 0.5s;
+    transition: 2s;
 }
 
 .overlay-content {
@@ -256,7 +261,7 @@ body {
     color: #818181;
     display: inline-block;
     margin: auto 20px;
-    transition: 0.3s;
+    transition: 2s;
 }
 
 .overlay a:hover,
