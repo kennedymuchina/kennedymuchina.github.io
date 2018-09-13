@@ -243,10 +243,10 @@ body {
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 50%;
     width: 100%;
     text-align: center;
-    margin-top: 0;
+    margin: auto;
 }
 
 .overlay a {
@@ -254,7 +254,8 @@ body {
     text-decoration: none;
     font-size: 36px;
     color: #818181;
-    display: block;
+    display: inline-block;
+    margin: auto 20px;
     transition: 0.3s;
 }
 
