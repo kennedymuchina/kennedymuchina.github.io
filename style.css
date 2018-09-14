@@ -389,5 +389,33 @@ body::-webkit-scrollbar {
 
 #services {
     height: 100vh;
-    width: 97%;
+    width: 100%;
+}
+
+.headr{
+    margin-top: 150px;
+    font-family: 'Rajdhani',sans-serif;
+}
+.elevator-pitch {
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+
+.row, #services {
+    margin: 0 !important;
+}
+
+.footr {
+    border: 1px #131116 solid;
+    margin-top: 150px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+.footer-heading {
+    padding:15px;
+    margin-bottom: 0;
 }
