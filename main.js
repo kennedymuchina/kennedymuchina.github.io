@@ -3,6 +3,7 @@ $(document).ready(function () {
     $(this).toggleClass('open');
     $('.myNav').toggleClass('overlay');
     $('.dspr').toggleClass('disappear');
+    $('.circles').toggleClass('disappear');
   });
 
   var header = $(".navbar");
