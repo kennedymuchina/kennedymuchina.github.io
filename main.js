@@ -5,18 +5,19 @@ $(document).ready(function () {
     $('.dspr').toggleClass('disappear');
     $('.circles').toggleClass('disappear');
   });
+  var header = $(".bar");
+  var brand = $(".navbar-brand") 
 
-  var header = $(".navbar");
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll >= window.innerHeight) {
-      header.addClass(".bg-transparent");
-      header.removeClass("")
-    } else {
-      header.removeClass("navbar-dark");
-      header.addClass("navbar-light");
-    }
-  });
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      if (scroll >= 630) {
+        header.addClass("scrolled");
+        brand.addClass("scrolled-brand");
+      } else {
+        header.removeClass("scrolled");
+        brand.removeClass("scrolled-brand");
+      }
+    });
 
   var typed = new Typed('.text', {
     strings: [ "","Data Scientist", "Full Stack Developer"],
@@ -28,4 +29,3 @@ $(document).ready(function () {
   });
 
 });
-

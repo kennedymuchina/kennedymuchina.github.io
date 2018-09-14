@@ -249,6 +249,16 @@ body::-webkit-scrollbar {
     transition: .25s ease-in-out;
 }
 
+.scrolled {
+    transition: 0.3s !important;
+    background: #131116 !important;
+}
+
+.scrolled-brand {
+    transition: 0.3s !important;
+    color: #131116 !important;
+}
+
 .nav-icon4 span:nth-child(1) {
     top: 0px;
     -webkit-transform-origin: left center;
