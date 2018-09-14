@@ -25,6 +25,10 @@ body::-webkit-scrollbar {
     margin: auto;
 }
 
+.disappear {
+    display: none !important;
+}
+
 .arrow {
     top: 75%;
     left: 90%;
@@ -213,7 +217,7 @@ body::-webkit-scrollbar {
     width: 36px;
     height: 36px;
     position: absolute;
-    margin-top: 45px !important;
+    margin-top: 40px !important;
     right: 50px;
     font-family: 'Ubuntu', sans-serif !important;
     -webkit-transform: rotate(0deg);
@@ -244,24 +248,6 @@ body::-webkit-scrollbar {
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
-
-.nav-icon1 span:nth-child(1) {
-    top: 2px;
-}
-
-
-.nav-icon1 span:nth-child(2) {
-    top: 16px;
-}
-
-.nav-icon1.open span:nth-child(1) {
-    top: 20px;
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    transform: rotate(135deg);
-}
-
 
 .nav-icon4 span:nth-child(1) {
     top: 0px;
@@ -315,7 +301,7 @@ body::-webkit-scrollbar {
     background-color: rgb(0, 0, 0);
     background-color: rgba(15, 15, 15, 0.0);
     overflow-y: hidden;
-    transition: 2s;
+    transition: 1s;
 }
 
 .overlay-content {
@@ -324,6 +310,7 @@ body::-webkit-scrollbar {
     width: 100%;
     text-align: center;
     margin: auto;
+    text-decoration: none;
 }
 
 .overlay a {
@@ -333,12 +320,11 @@ body::-webkit-scrollbar {
     color: #818181;
     display: inline-block;
     margin: auto 20px;
-    transition: 2s;
 }
 
 .overlay .wiggle:hover,
 .overlay .wiggle:focus {
-    color: #f1f1f1;
+    color: greenyellow;
     animation: wiggle 1.5s ease;
     animation-iteration-count: 20;
 }
