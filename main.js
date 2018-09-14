@@ -3,4 +3,27 @@ $(document).ready(function () {
     $(this).toggleClass('open');
     $('.myNav').toggleClass('overlay');
   });
+
+  var header = $(".navbar");
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll >= window.innerHeight) {
+      header.addClass(".bg-transparent");
+      header.removeClass("")
+    } else {
+      header.removeClass("navbar-dark");
+      header.addClass("navbar-light");
+    }
+  });
+
+  var typed = new Typed('.text', {
+    strings: [ "","Data Scientist", "Full Stack Developer"],
+    startDelay:40,
+    typeSpeed: 50,
+    backDelay: 700,
+    backSpeed: 50,
+    showCursor: false
+  });
+
 });
+
