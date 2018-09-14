@@ -361,3 +361,19 @@ body {
         font-size: 20px
     }
 }
+.skills-row {
+    top: 83%;
+    left: 37%;
+    align-items: justify;
+    position: absolute;
+}
+
+.skill-icon {
+    width : 30px;
+    margin: 5px;
+}
+
+#services {
+    height: 100vh;
+    width: 97%;
+}
