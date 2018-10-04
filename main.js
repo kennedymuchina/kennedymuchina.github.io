@@ -2,8 +2,6 @@ $(document).ready(function () {
   $(".nav-icon4").on("click", function (event) {
     $(this).toggleClass('open');
     $('.myNav').toggleClass('overlay');
-    $('.dspr').toggleClass('disappear');
-    $('.circles').toggleClass('disappear');
   });
   var header = $(".bar");
   var brand = $(".navbar-brand") 
