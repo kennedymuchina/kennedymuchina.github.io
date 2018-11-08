@@ -7,6 +7,7 @@
 
     <!-- Title Icon -->
     <link rel="icon" type="image/ico" href="devholic.png">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
 
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -43,26 +44,29 @@
         <li class="bubble"></li>
         <li class="bubble"></li>
       </ul>
-      <nav class="navbar fixed-top wiggle">
-        <a class="navbar-brand" href="#">Kennedy Muchina</a>
+      <nav class="navbar ">
+        <div class="container">
+          <a class="navbar-brand" href="#">Kennedy Muchina</a>
           <div id="myNav" class="nav-icon4" onclick=" myFunction()">
-            <span class="bar" ></span>
-            <span class="bar" ></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
-        </a> 
+          </a>
+          
+          <ul class="overlay myNav navbar-collapse collapse text-uppercase ml-auto" id="dropItems">
+            <li class="nav-item">
+              <a class="nav-link wiggle js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link wiggle js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link wiggle js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>           
-      <div class ="myNav" >
-        <div class="overlay-content">
-          <a class="wiggle" href="#">About</a>
-          <a class="wiggle" href="#">Projects</a>
-          <a class="wiggle" href="#">Contact</a>
-        </div>
-      </div>
-      <div class="row dspr hero-text">
-        <div class="text display-4 col-log-12">
-        </div>
-      
-      </div>
+
       <div class=" dspr skills-row row">
         <div class="icons">
           <span class="row-item">
@@ -153,6 +157,7 @@
     <!--jQuery Scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
+    <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Typed Js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>

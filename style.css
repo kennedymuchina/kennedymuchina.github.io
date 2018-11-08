@@ -198,9 +198,13 @@ body::-webkit-scrollbar {
 } */
 
 
+nav {
+    padding-top: 70px !important;
+    
+}
+
 .navbar-brand {
     color: #c4c3c5 !important;
-    margin-top: 60px !important;
     padding-bottom: 0 !important;
     left: 50px !important;
     font-size: 2em !important;
@@ -216,8 +220,7 @@ body::-webkit-scrollbar {
 .nav-icon4 {
     width: 36px;
     height: 36px;
-    position: absolute;
-    margin-top: 40px !important;
+    bottom: 0px;
     right: 50px;
     font-family: 'Ubuntu', sans-serif !important;
     -webkit-transform: rotate(0deg);
@@ -237,7 +240,6 @@ body::-webkit-scrollbar {
     width: 100%;
     background: #c5c5c5;
     border-radius: 9px;
-    opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -257,6 +259,11 @@ body::-webkit-scrollbar {
 .scrolled-brand {
     transition: 0.3s !important;
     color: #131116 !important;
+    
+}
+
+.scrolled-nav {
+    background-color: #ffffff00 !important;
 }
 
 .nav-icon4 span:nth-child(1) {
@@ -303,24 +310,24 @@ body::-webkit-scrollbar {
 }
 
 .overlay {
-    height:81%;
-    display: block;
-    width: 100%;
-    z-index: 2;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(15, 15, 15, 0.0);
-    overflow-y: hidden;
-    transition: 1s;
 }
 
 .overlay-content {
-    position: fixed;
-    top: 60%;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 0;
+  list-style: none;
+  text-decoration: none;
+  height: 100vh;
+  justify-content:center;
+}
+
+@media (max-width: 575px) {
+    .overlay-content {
+        flex-direction: column;
+    }
 }
 
 .overlay a {
